@@ -8,6 +8,6 @@ C
 OC(C(C(N1C(N=C(C=C1)N)=O)O2)O)C2COP(O)([O-])=O
 
 5'-GCUA-3'
-
+(Real SMILES for testing)
 "OC(C(C(N1C=NC2=C(N=CN=C21)N)O3)O)C3COP(OC(C(C(N1C(NC(C=C1)=O)=O)O2)O)C2COP(OC(C(C(N1C(N=C(C=C1)N)=O)O2)O)C2COP(OC(C(C(N1C=NC2=C1N=C(N)NC2=O)O3)O)C3COP(O)([O-])=O)([O-])=O)([O-])=O)([O-])=O"
 

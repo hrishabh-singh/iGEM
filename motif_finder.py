@@ -75,8 +75,9 @@ if __name__ == "__main__":
     variables_dict = {"N":["A","U"],
                       "K":["G","C","U"]} # Ensure uppercase here, not "T" but "U"
     # keep variable_dict variable always there, even as {} 
-    # sequence = "AAAGUUU"
-    # motif = "AAA"
+    
+    # sequence = "AAAACUUUU"
+    # motif = "AAAA"
     # variables_dict = {"A":["U"],"U":["A","G"],"G":["C","U"],"C":["G"]}
     # possible use to find hairpins; uncomment to test
     print(search(sequence,motif,variables_dict))
