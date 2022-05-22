@@ -42,7 +42,7 @@ def stem_loops(seq,max_nt_arc=10):
                     try:
                         match = search(str2[:len(string)],string,comp)
                         if match != []:
-                            possible_loops.append((i-1,string[::-1],str2[:len(string)],n_nt_arc))
+                            possible_loops.append((i-len(string[::1]),string[::-1],str2[:len(string)],n_nt_arc))
                     except:
                         pass
             except:

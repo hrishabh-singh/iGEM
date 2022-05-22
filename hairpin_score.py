@@ -45,7 +45,7 @@ def score(seq):
         elif hairpin[3] == 1:
             score_counter *= 2
             
-        scores.append((score_counter,hairpin[0],hairpin[1],hairpin[2],hairpin[3]))
+        scores.append((-score_counter,hairpin[0],hairpin[1],hairpin[2],hairpin[3]))
         
     return scores
 
@@ -54,8 +54,8 @@ def score(seq):
 
 def top_n(seq,n=10): # gives top 10 by default
     scores_tup = score(seq)
-    scores_sorted = sorted(scores_tup,key=lambda x:x[0],reverse=True)
-    return scores_sorted[:10]
+    scores_sorted = sorted(scores_tup,key=lambda x:x[0])
+    return scores_sorted[:n]
 
 def avg_energy_score(seq):
     return np.round(sum([score[0] for score in score(seq)])/len(score(seq)),2)

@@ -71,9 +71,10 @@ def search(seq,motif,variables_dict):
             
 if __name__ == "__main__":
     sequence = "AACATGTacaataataatGGAGcatgaaCATATG" # unorganised sequence
-    motif = "ggag" # unorganised motif
+    motif = "AAK" # unorganised motif
     variables_dict = {"N":["A","U"],
-                      "K":["G","C","U"]} # Ensure uppercase here, not "T" but "U"
+                      "K":["G","C","U"],
+                      "F":["A","G"]} # Ensure uppercase here, not "T" but "U"
     # keep variable_dict variable always there, even as {} 
     
     # sequence = "AAAACUUUU"
